@@ -1,0 +1,62 @@
+<footer class="text-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>About Us</h3><p>"Design Expertise" is a leading interior design and fit-out contracting company based in Hyderabad, India. As an extension of MR Constructions, we deliver innovative and high-quality designs for residential and commercial spaces, blending functionality with aesthetic appeal. With hundreds of projects completed, we are known for our unique style and exceptional reputation.</p>
+                    </div>
+
+                    
+
+                    <div class="col-md-4">
+                        <h3>Contact Us</h3>
+                        <div class="widget widget-address">
+                            <address>
+                                <span>MR Tower, Riyasat Nagar, Hyderabad.</span>
+                                <span><strong>Phone:</strong>+ 91 9866104875</span>
+                                <span><strong>Email:</strong><a href="mailto:conatct@designexpertise.in">conatct@designexpertise.in</a></span>
+                                <span><strong>Open</strong>Sunday - Friday 10:00 - 06:00</span>
+                            </address>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="widget widget_recent_post">
+                            <h3>Our Services</h3>
+                            <ul>
+                                <li><a href="#">Modular Kitchen</a></li>
+                                <li><a href="#">Commerical Design</a></li>
+                                <li><a href="#">Residential Design</a></li>
+                                <li><a href="#">Furnishing & Decor</a></li>
+                                <li><a href="#">Exterior Elevation</a></li>
+                                <li><a href="#">Hospitality Design</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subfooter">
+            	<div class="container">
+            	    <div class="row align-items-middle">
+            	        <div class="col-md-3">
+            	            <img src="images-interior-landing/logo.png" class="logo-small" alt=""><br>
+            	        </div>
+
+                        <div class="col-md-6 text-center">
+            	            &copy; Copyright 2025 Design Expertise.
+            	        </div>
+
+            	        <div class="col-md-3 text-right">
+            	            <div class="social-icons">
+            	                <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+            	                <a href="#"><i class="fa  fa-whatsapp  fa-lg"></i></a>
+            	                <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+            	                <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+            	               
+            	            </div>
+            	        </div>
+            	    </div>
+            </div>
+
+            <a href="#" id="back-to-top"></a>
+        </footer>

@@ -1,0 +1,54 @@
+<header class="transparent">
+            <div class="info">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col">Working Hours Monday - Friday <span class="id-color"><strong>08:00-16:00</strong></span></div>
+                            <div class="col">Toll Free <span class="id-color"><strong>1800.899.900</strong></span></div>
+                            <!-- social icons -->
+                            <div class="col social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-rss"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-envelope-o"></i></a>
+                            </div>
+                            <!-- social icons close -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- logo begin -->
+                        <div id="logo">
+                            <a href="index.html">
+                                <img class="logo" src="images-interior-landing/logo.png" alt="">
+                            </a>
+                        </div>
+                        <!-- logo close -->
+
+                        <!-- small button begin -->
+                        <span id="menu-btn"></span>
+                        <!-- small button close -->
+
+                        <!-- mainmenu begin -->
+							<nav class="md-flex">
+									<ul id="mainmenu">
+										<li><a href="index.html">Home<span></span></a></li>
+										<li><a href="About.html">About</a></li>
+										<li><a href="services.html">Services</a></li>
+										<li><a href="project.html">Our Projects</a></li>
+										<li><a href="contact.html">Contact</a></li>
+									</ul>
+								</nav>
+							
+							<!-- mainmenu close -->
+
+                    </div>
+                    
+
+                </div>
+            </div>
+        </header>
