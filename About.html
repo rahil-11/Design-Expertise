@@ -36,13 +36,14 @@
 <body class="de_light">
 
     <div id="wrapper">
-         <!-- header begin -->
-         <header class="transparent">
+        <!-- header begin -->
+        <header class="transparent">
             <div class="info">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="col">Working Hours Monday - Friday <span class="id-color"><strong>08:00-16:00</strong></span></div>
+                            <div class="col">Working Hours Monday - Friday <span
+                                    class="id-color"><strong>08:00-16:00</strong></span></div>
                             <div class="col">Toll Free <span class="id-color"><strong>1800.899.900</strong></span></div>
                             <!-- social icons -->
                             <div class="col social">
@@ -63,7 +64,7 @@
                         <!-- logo begin -->
                         <div id="logo">
                             <a href="index.html">
-                                <img class="logo" src="images-interior-landing/logo.png" alt="">
+                                <img class="logo" src="images\2-7.png" width="150px" alt="" style="margin-top: -11px;">
                             </a>
                         </div>
                         <!-- logo close -->
@@ -73,20 +74,20 @@
                         <!-- small button close -->
 
                         <!-- mainmenu begin -->
-							<nav class="md-flex">
-									<ul id="mainmenu">
-										<li><a href="index.html">Home<span></span></a></li>
-										<li><a href="About.html">About</a></li>
-										<li><a href="services.html">Services</a></li>
-										<li><a href="project.html">Our Projects</a></li>
-										<li><a href="contact.html">Contact</a></li>
-									</ul>
-								</nav>
-							
-							<!-- mainmenu close -->
+                        <nav class="md-flex">
+                            <ul id="mainmenu">
+                                <li><a href="index.html">Home<span></span></a></li>
+                                <li><a href="About.html">About</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="project.html">Our Projects</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+
+                        <!-- mainmenu close -->
 
                     </div>
-                    
+
 
                 </div>
             </div>
@@ -172,95 +173,283 @@
                 </div>
             </section>
 
+            <style>
+              
+                .card {
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
 
+                .cardblue:hover {
+                    transform: scale(1.02) translateY(-10px);
+                    box-shadow: 0 15px 30px rgba(1, 116, 247, 0.2);
+                }
+                .cardgreen:hover {
+                    transform: scale(1.02) translateY(-10px);
+                    box-shadow: 0 15px 30px rgba(61, 247, 4, 0.2);
+                }
+                .cardyellow:hover {
+                    transform: scale(1.02) translateY(-10px);
+                    box-shadow: 0 15px 30px rgba(247, 181, 1, 0.2);
+                }
+
+                .card .content {
+                    padding: 50px 30px;
+                    text-align: center;
+                    position: relative;
+                    z-index: 2;
+                }
+
+                .card[data-color="blue"] {
+                    background: #b8d8d8;
+                }
+
+                .card[data-color="green"] {
+                    background: #d5e5a3;
+                }
+
+                .card[data-color="yellow"] {
+                    background: #ffe28c;
+                }
+
+                /* Border Trail Animation */
+                .card .border-trail {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
+                    z-index: 1;
+                }   .card::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border: 2px solid transparent;
+                    border-radius: 8px;
+                    z-index: 1;
+                    pointer-events: none;
+                    transition: border-color 0.4s ease-in-out;
+                }
+
+                .card[data-color="blue"]:hover::before {
+                    border-color: #0077b6;
+                    
+                }
+
+                .card[data-color="green"]:hover::before {
+                    border-color: #5c940d;
+                }
+
+                .card[data-color="yellow"]:hover::before {
+                    border-color: #d4a017;
+                }
+            </style>
 
             <!-- ................................................ -->
 
             <section aria-label="section" style="background-size: cover;">
                 <div class="container" style="background-size: cover;">
                     <div class="row" style="background-size: cover;">
-                        <div class="col-md-4 mb60" style="background-size: cover;">
-                            <i class="fa fa-flag fa-3x p-3"></i>
-                            <h3>OUR MISSION</h3>
-                            <p>Design Expertise is the one-stop shop for all your Lighting Design needs. With our
-                                expertly crafted lighting designs, you can make your space look more stylish and
-                                luxurious.</p>
-                            <div class="spacer10" style="background-size: cover;"></div>
-
+                        <div class="col-md-4 col-sm-6 content-card">
+                            <div class="card-big-shadow">
+                                <div class="card cardblue card-just-text" data-background="color" data-color="blue"
+                                    data-radius="none">
+                                    <div class="content">
+                                       <img src="images\icons\flag-1--unscreen.gif" width="80px" alt="">
+                                        <h3><b>OUR MISSION</b></h3>
+                                        <p class="description" style="text-align: justify;">
+                                            Design Expertise is the one-stop shop for all your Lighting Design needs.
+                                            With our expertly crafted lighting designs, you can make your space look
+                                            more stylish and luxurious.
+                                        </p>
+                                    </div>
+                                    <div class="border-trail"></div>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="col-md-4 mb60" style="background-size: cover;">
-                            <i class="fa fa-bullseye fa-3x p-3"></i>
-                            <h3>OUR VISION</h3>
-                            <p>We help businesses create an Office Design they can be proud of. Our expertise in
-                                interior design and office fit out makes us the perfect partner to bring your vision to
-                                life.
-                            </p>
-                            <div class="spacer10" style="background-size: cover;"></div>
+                        <div class="col-md-4 col-sm-6 content-card">
+                            <div class="card-big-shadow">
+                                <div class="card cardgreen card-just-text" data-background="color" data-color="green"
+                                    data-radius="none">
+                                    <div class="content">
+                                        <img src="images\icons\target-1--unscreen.gif" width="80px" alt="">
+                                        <h3><b>OUR VISION</b></h3>
+                                        <p class="description" style="text-align: justify;">
+                                            We help businesses create an Office Design they can be proud of. Our
+                                            expertise in interior design and office fit-out makes us the perfect partner
+                                            to bring your vision to life.
+                                        </p>
+                                    </div>
+                                    <div class="border-trail"></div>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="col-md-4 mb60" style="background-size: cover;">
-                            <i class="fa  fa-fort-awesome fa-3x p-3"></i>
-                            <h3>
-                                OUR STRATEGY</h3>
-                            <p>
-                                OUR STRATEGY
-                                Design Expertise helps you build the perfect Modular Kitchen for your home. With our
-                                expert interior design team, you can make sure that your kitchen looks exactly how you
-                                want it to.
-
-                            </p>
-                            <div class="spacer10" style="background-size: cover;"></div>
+                        <div class="col-md-4 col-sm-6 content-card">
+                            <div class="card-big-shadow">
+                                <div class="card cardyellow card-just-text" data-background="color" data-color="yellow"
+                                    data-radius="none">
+                                    <div class="content">
+                                        <img src="images\icons\castle-unscreen.gif" width="80px" alt="">
+                                        <h3><b>OUR STRATEGY</b></h3>
+                                        <p class="description" style="text-align: justify;">
+                                            Design Expertise helps you build the perfect Modular Kitchen for your home.
+                                            With our expert interior design team, you can make sure that your kitchen
+                                            looks exactly how you want it to.
+                                        </p>
+                                    </div>
+                                    <div class="border-trail"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <style>
+                #section-testimonial {
+                    padding: 80px 0;
+                    text-align: center;
+                }
 
-            <section id="section-testimonial" class="text-light">
+                .separator span i {
+                    font-size: 16px;
+                    color: #ffcc00;
+                    animation: blink 1.5s infinite alternate;
+                }
+
+                @keyframes blink {
+                    0% {
+                        opacity: 0.5;
+                        transform: scale(1);
+                    }
+
+                    100% {
+                        opacity: 1;
+                        transform: scale(1.2);
+                    }
+                }
+
+                .de_testi {
+                    padding: 30px;
+                    border-radius: 10px;
+                    position: relative;
+                    animation: fadeInUp 1s ease-in-out;
+                }
+
+                @keyframes fadeInUp {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(30px);
+                    }
+
+                    100% {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+
+                blockquote {
+                    font-size: 18px;
+                    font-style: italic;
+                    position: relative;
+                }
+
+                blockquote::before {
+                    content: "“";
+                    font-size: 50px;
+                    color: #ffcc00;
+                    position: absolute;
+                    left: -10px;
+                    top: -20px;
+                    animation: bounce 1.5s infinite alternate;
+                }
+
+                @keyframes bounce {
+                    0% {
+                        transform: translateY(0);
+                    }
+
+                    100% {
+                        transform: translateY(-10px);
+                    }
+                }
+
+                .de_testi_by {
+                    margin-top: 15px;
+                    font-weight: bold;
+                    color: #ffcc00;
+                }
+
+                .testimonial-wrapper {
+                    display: flex;
+                    overflow: hidden;
+                    width: 100%;
+                    position: relative;
+                    justify-content: center;
+                }
+
+                .testimonial-slide {
+                    display: none;
+                    transition: opacity 1s ease-in-out;
+                }
+
+                .testimonial-slide.active {
+                    display: block;
+                    opacity: 1;
+                }
+            </style>
+            <section id="section-testimonial">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
-                            <h1>What Client's Say?</h1>
+                        <div class="col-md-6 offset-md-3 text-center ">
+                            <h1 class="text-white">What Client's Say?</h1>
                             <div class="separator"><span><i class="fa fa-circle"></i></span></div>
                             <div class="spacer-single"></div>
                         </div>
                     </div>
-                    <div id="testimonial-carousel" class="owl-carousel owl-theme de_carousel wow fadeInUp"
-                        data-wow-delay=".3s">
 
-                        <div class="item">
+                    <!-- Testimonial Slider -->
+                    <div class="testimonial-wrapper">
+                        <div class="testimonial-slide active">
                             <div class="de_testi">
                                 <blockquote>
                                     <p>"Design Expertise truly is the best in the business when it comes to interior
                                         design. They have such an eye for detail and a knack for creating spaces that
                                         are both inviting and functional. I've worked with them on several projects now,
-                                        and each time I am amazed by their creativity and professionalism. "</p>
-                                    <div class="de_testi_by">
-                                        Baseer
-                                    </div>
+                                        and each time I am amazed by their creativity and professionalism."</p>
+                                    <div class="de_testi_by">Baseer</div>
                                 </blockquote>
-
                             </div>
                         </div>
 
-                        <div class="item">
+                        <div class="testimonial-slide">
                             <div class="de_testi">
                                 <blockquote>
-                                    <p>"Design Expertise truly is the best in the business when it comes to interior
-                                        design. They have such an eye for detail and a knack for creating spaces that
-                                        are both inviting and functional. I've worked with them on several projects now,
-                                        and each time I am amazed by their creativity and professionalism. "</p>
-                                    <div class="de_testi_by">
-                                        Samanta
-                                    </div>
+                                    <p>"I had the best experience with Design Expertise! Their ideas are truly inspiring
+                                        and unique. Every corner of my house now looks elegant and luxurious, thanks to
+                                        their amazing work."</p>
+                                    <div class="de_testi_by">Samanta</div>
                                 </blockquote>
                             </div>
                         </div>
 
-
-
-
+                        <div class="testimonial-slide">
+                            <div class="de_testi">
+                                <blockquote>
+                                    <p>"Their approach to interior design is just phenomenal! I have recommended them to
+                                        many of my friends, and they are all equally satisfied. The best team ever!"</p>
+                                    <div class="de_testi_by">Michael</div>
+                                </blockquote>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </section>
 
@@ -274,7 +463,22 @@
 
 
         </div>
+        <script>
+            let index = 0;
+            const slides = document.querySelectorAll('.testimonial-slide');
 
+            function showSlide() {
+                slides.forEach((slide, i) => {
+                    slide.classList.remove('active');
+                    if (i === index) {
+                        slide.classList.add('active');
+                    }
+                });
+                index = (index + 1) % slides.length;
+            }
+
+            setInterval(showSlide, 5000); // Change slide every 5 seconds
+        </script>
         <!-- footer begin -->
         <footer class="text-light">
             <div class="container">
@@ -284,8 +488,8 @@
                         <p>"Design Expertise" is a leading interior design and fit-out contracting company based in
                             Hyderabad, India. As an extension of MR Constructions, we deliver innovative and
                             high-quality designs for residential and commercial spaces, blending functionality with
-                            aesthetic appeal. With hundreds of projects completed, we are known for our unique style and
-                            exceptional reputation.</p>
+                            aesthetic appeal. With hundreds of projects completed, we are known for our unique style
+                            and exceptional reputation.</p>
                     </div>
 
 
@@ -296,8 +500,6 @@
                             <address>
                                 <span>MR Tower, Riyasat Nagar, Hyderabad.</span>
                                 <span><strong>Phone:</strong>+ 91 9866104875</span>
-                                <span><strong>Email:</strong><a
-                                        href="mailto:conatct@designexpertise.in">conatct@designexpertise.in</a></span>
                                 <span><strong>Open</strong>Sunday - Friday 10:00 - 06:00</span>
                             </address>
                         </div>
@@ -323,19 +525,19 @@
                 <div class="container">
                     <div class="row align-items-middle">
                         <div class="col-md-3">
-                            <img src="images-interior-landing/logo.png" class="logo-small" alt=""><br>
+                            <img src="images\2-7.png" width="200px" class="logo-small" alt=""><br>
                         </div>
 
-                        <div class="col-md-6 text-center">
+                        <div class="col-md-6 text-center d-flex justify-content-center align-items-center">
                             &copy; Copyright 2025 Design Expertise.
                         </div>
 
-                        <div class="col-md-3 text-right">
+                        <div class="col-md-3 text-right  d-flex justify-content-center align-items-center">
                             <div class="social-icons">
                                 <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
                                 <a href="#"><i class="fa  fa-whatsapp  fa-lg"></i></a>
-                                <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                                <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                <a href="#"><i class="fa fa-instagram fa-lg"></i></a>
+
 
                             </div>
                         </div>
@@ -357,9 +559,9 @@
     <!-- SLIDER REVOLUTION SCRIPTS  -->
     <script src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
     <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-  <!-- RS5.0 Core JS Files -->
-  <script src="revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
-  <script src="revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+    <!-- RS5.0 Core JS Files -->
+    <script src="revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+    <script src="revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
 </body>
 
 </html>
